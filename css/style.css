@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+*{
+    font-family: Hanken Grotesk;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-principal{
+    max-width: 750px;
+    box-shadow: 10px 15px 15px 10px hsl(221, 100%, 96%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 2em;
+}
+
+.conteudo-principal-resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    row-gap: 2em;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    padding: 0em 2em;
+    border-radius: 2em;
+}
+
+.conteudo-principal-resultado-score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 3em;
+    color: hsl(225, 6%, 75%);
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    margin-top: 1em;
+}
+
+.score{
+    font-size: 4rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+
+.conteudo-principal-resultado h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(225, 6%, 75%);
+}
+
+.conteudo-principal-resultado h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.conteudo-principal-resultado span{
+    text-align: center;
+    color: hsl(225, 6%, 75%);
+    font-weight: 700;
+    width: 75%;
+}
+
+.conteudo-principal-sumario{
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    row-gap: 1em;
+}
+
+.lista-sumario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.2em;
+    padding: 1em;
+}
+
+
+.sumario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+    border-radius: 8px;
+
+}
+
+.sumario-info-esquerdo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+}
+
+.sumario-info-direito{
+    color: hsl(225, 6%, 75%);
+    font-weight: bold;
+}
+
+.sumario-info-direito strong{
+    color: hsl(224, 30%, 27%);
+}
+
+
+.conteudo-principal-sumario h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+.Reacao{
+    color: hsl(0, 100%, 67%);
+    background-color:  hsl(0, 100%, 67%, 0.1);
+}
+
+.Memoria{
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.Verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.Visual{
+    color: hsl(234, 85%, 45%);;
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.conteudo-principal-sumario a{
+    text-decoration: none;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    width: 100%;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    padding: 1.2em 1em;
+    border-radius: 2em;
+}
+
+.conteudo-principal-sumario a:hover{
+    background: hsl(224, 30%, 27%);
+}
+
+@media screen and (max-width: 660px) {
+    .container-principal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .conteudo-principal-resultado{
+        padding: 2em 0;
+        border-radius: 0;
+    }
+
+}
+
